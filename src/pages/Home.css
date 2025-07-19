@@ -29,6 +29,11 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-image-container:hover .portfolio-image {
+  transform: scale(1.02);
 }
 
 .portfolio-overlay {
@@ -41,11 +46,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-image-container:hover .portfolio-overlay {
+  transform: scale(1.02);
 }
 
 .portfolio-overlay:hover {
-  background: rgba(0, 0, 0, 0.13);
+  background: rgba(0, 0, 0, 0.18);
 }
 
 .portfolio-overlay-text {
