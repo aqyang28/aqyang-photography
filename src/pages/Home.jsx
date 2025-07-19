@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './Portfolio.css';
+import { NavLink } from 'react-router-dom';
+import './Home.css';
 
 const images = [
   {
@@ -24,7 +25,7 @@ const images = [
   }
 ];
 
-export default function Portfolio() {
+export default function Home() {
   const [errored, setErrored] = useState(Array(images.length).fill(false));
 
   // Reset error state if image src changes
@@ -45,19 +46,29 @@ export default function Portfolio() {
     <section className="portfolio-grid">
       {images.map((img, idx) => (
         <div className="portfolio-item" key={idx}>
-          {errored[idx] ? (
-            <div className="portfolio-image-alt">{img.alt}</div>
-          ) : (
-            <img
-              src={img.src}
-              alt={img.alt}
-              className="portfolio-image"
-              onError={() => handleError(idx)}
-            />
-          )}
-          <div className="portfolio-info">
-            <h3>{img.title}</h3>
-          </div>
+          <NavLink 
+            to={`/${img.title.toLowerCase()}`} 
+            className="portfolio-image-link"
+            style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
+          >
+            <div className="portfolio-image-container">
+              {errored[idx] ? (
+                <div className="portfolio-image-alt">{img.alt}</div>
+              ) : (
+                <>
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="portfolio-image"
+                    onError={() => handleError(idx)}
+                  />
+                  <div className="portfolio-overlay">
+                    <h2 className="portfolio-overlay-text">{img.title}</h2>
+                  </div>
+                </>
+              )}
+            </div>
+          </NavLink>
         </div>
       ))}
     </section>
