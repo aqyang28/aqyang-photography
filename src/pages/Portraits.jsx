@@ -24,7 +24,7 @@ export default function Portraits() {
         marginBottom: '1.5rem',
         textAlign: 'left'
       }}>
-        To me, the greatest gift of shooting portraits is seeing other people smile. The opportunity to connect with someone and see their superficial smile morph into a genuine one is something I cherish. Below is a collection of graduation photos, family portraits, and individuals portraits that I have taken!
+        To me, the greatest gift of shooting portraits is seeing other people smile. The opportunity to connect with someone and watch a superficial smile morph into a genuine one is something I will never take for granted. Below is a collection of graduation photos, family portraits, and individuals portraits that I have taken!
       </p>
       
       <p style={{
