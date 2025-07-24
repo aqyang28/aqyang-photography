@@ -6,8 +6,8 @@ export default function Portraits() {
       {/* Text Section */}
       <section style={{ 
         maxWidth: 722.5,
-        margin: '0 auto', 
-        padding: '0.3rem 1rem 2rem 1rem'
+        margin: '-10px auto 0 auto', // Negative top margin to pull title closer to toolbar
+        padding: '0 1rem 2rem 1rem' // Set top padding to 0
       }}>
         <h1 style={{ 
           fontSize: '2.5rem', 
@@ -81,7 +81,7 @@ export default function Portraits() {
               gridRow: '1 / 2',
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               display: 'block'
             }}
           />
@@ -94,7 +94,7 @@ export default function Portraits() {
               gridRow: '1 / 2',
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               display: 'block'
             }}
           />
@@ -107,7 +107,7 @@ export default function Portraits() {
               gridRow: '1 / 2',
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               display: 'block'
             }}
           />
@@ -121,7 +121,7 @@ export default function Portraits() {
               gridRow: '2 / 3',
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               display: 'block'
             }}
           />
@@ -134,7 +134,7 @@ export default function Portraits() {
               gridRow: '2 / 3',
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               display: 'block'
             }}
           />
@@ -147,7 +147,7 @@ export default function Portraits() {
               gridRow: '2 / 3',
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               display: 'block'
             }}
           />
@@ -161,7 +161,7 @@ export default function Portraits() {
               gridRow: '3 / 4',
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               display: 'block'
             }}
           />
@@ -174,7 +174,7 @@ export default function Portraits() {
               gridRow: '3 / 4',
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               display: 'block'
             }}
           />
@@ -187,7 +187,7 @@ export default function Portraits() {
               gridRow: '3 / 4',
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               display: 'block'
             }}
           />
@@ -203,11 +203,11 @@ export default function Portraits() {
       }}>
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)', // 3 columns
-          gridTemplateRows: 'repeat(5, 200px)', // Increased to 5 rows to accommodate taller outer columns
-          gap: '1.0125rem', // Reduced from 1.125rem to 1.0125rem (0.9x)
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gridTemplateRows: '420px 420px', // Two tall rows for middle images
+          gap: '1.0125rem',
           maxWidth: '100%',
-          padding: '0 0.50625rem 0 0.50625rem' // Reduced edge padding by half (0.5x of 1.0125rem)
+          padding: '0 0.50625rem 0 0.50625rem'
         }}>
           {/* Left Column - Single Portrait */}
           <img
@@ -215,7 +215,7 @@ export default function Portraits() {
             alt="Portrait 11"
             style={{
               gridColumn: '1 / 2',
-              gridRow: '1 / 4', // Spans 3 rows (1.75x the original 2 rows)
+              gridRow: '1 / 3', // Spans both rows, stays vertical
               width: '100%',
               height: '100%',
               objectFit: 'cover',
@@ -229,7 +229,7 @@ export default function Portraits() {
             alt="Portrait 12"
             style={{
               gridColumn: '2 / 3',
-              gridRow: '1 / 2', // Top landscape image - 1 row
+              gridRow: '1 / 2', // Top image
               width: '100%',
               height: '100%',
               objectFit: 'cover',
@@ -242,7 +242,7 @@ export default function Portraits() {
             alt="Portrait 13"
             style={{
               gridColumn: '2 / 3',
-              gridRow: '2 / 3', // Bottom landscape image - 1 row (0.8x of original 2 rows)
+              gridRow: '2 / 3', // Bottom image
               width: '100%',
               height: '100%',
               objectFit: 'cover',
@@ -256,7 +256,7 @@ export default function Portraits() {
             alt="Portrait 14"
             style={{
               gridColumn: '3 / 4',
-              gridRow: '1 / 4', // Spans 3 rows (1.75x the original 2 rows)
+              gridRow: '1 / 3', // Spans both rows, stays vertical
               width: '100%',
               height: '100%',
               objectFit: 'cover',
