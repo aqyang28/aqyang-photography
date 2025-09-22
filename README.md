@@ -1,1 +1,1 @@
-Hello there, writing this from Terminal.
+Hello there, welcome to summer project where I practice website development by making something meaningful to me: a photography portfolio!
