@@ -1,4 +1,24 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
+
+// Helper component for fade-in images
+function FadeInImage({ src, alt, style, ...props }) {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15 });
+  return (
+    <img
+      ref={ref}
+      src={src}
+      alt={alt}
+      style={{
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'none' : 'translateY(40px)',
+        transition: 'opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1)',
+        ...style,
+      }}
+      {...props}
+    />
+  );
+}
 
 export default function Portraits() {
   return (
@@ -73,7 +93,7 @@ export default function Portraits() {
           padding: '0 0.50625rem 0 0.50625rem' // Reduced edge padding by half (0.5x of 1.0125rem)
         }}>
           {/* Row 1 - Portrait Orientation */}
-          <img
+          <FadeInImage
             src="src/images/sample_vert.jpg"
             alt="Portrait 1"
             style={{
@@ -86,7 +106,7 @@ export default function Portraits() {
             }}
           />
           
-          <img
+          <FadeInImage
             src="src/images/sample_vert.jpg"
             alt="Portrait 2"
             style={{
@@ -99,7 +119,7 @@ export default function Portraits() {
             }}
           />
           
-          <img
+          <FadeInImage
             src="src/images/sample_vert.jpg"
             alt="Portrait 3"
             style={{
@@ -113,7 +133,7 @@ export default function Portraits() {
           />
           
           {/* Row 2 */}
-          <img
+          <FadeInImage
             src="src/images/sample_horiz.jpg"
             alt="Portrait 4"
             style={{
@@ -126,7 +146,7 @@ export default function Portraits() {
             }}
           />
           
-          <img
+          <FadeInImage
             src="src/images/sample_horiz.jpg"
             alt="Portrait 5"
             style={{
@@ -139,7 +159,7 @@ export default function Portraits() {
             }}
           />
           
-          <img
+          <FadeInImage
             src="src/images/sample_horiz.jpg"
             alt="Portrait 6"
             style={{
@@ -153,7 +173,7 @@ export default function Portraits() {
           />
           
           {/* Row 3 */}
-          <img
+          <FadeInImage
             src="src/images/sample_horiz.jpg"
             alt="Portrait 7"
             style={{
@@ -166,7 +186,7 @@ export default function Portraits() {
             }}
           />
           
-          <img
+          <FadeInImage
             src="src/images/sample_horiz.jpg"
             alt="Portrait 8"
             style={{
@@ -179,7 +199,7 @@ export default function Portraits() {
             }}
           />
           
-          <img
+          <FadeInImage
             src="src/images/sample_horiz.jpg"
             alt="Portrait 9"
             style={{
@@ -210,7 +230,7 @@ export default function Portraits() {
           padding: '0 0.50625rem 0 0.50625rem'
         }}>
           {/* Left Column - Single Portrait */}
-          <img
+          <FadeInImage
             src="src/images/sample_vert.jpg"
             alt="Portrait 11"
             style={{
@@ -224,7 +244,7 @@ export default function Portraits() {
           />
           
           {/* Middle Column - Two Landscape Images Stacked */}
-          <img
+          <FadeInImage
             src="src/images/sample_horiz.jpg"
             alt="Portrait 12"
             style={{
@@ -237,7 +257,7 @@ export default function Portraits() {
             }}
           />
           
-          <img
+          <FadeInImage
             src="src/images/sample_horiz.jpg"
             alt="Portrait 13"
             style={{
@@ -251,7 +271,7 @@ export default function Portraits() {
           />
           
           {/* Right Column - Single Portrait */}
-          <img
+          <FadeInImage
             src="src/images/sample_vert.jpg"
             alt="Portrait 14"
             style={{
