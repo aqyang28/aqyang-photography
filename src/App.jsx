@@ -7,13 +7,34 @@ import Sports from './pages/Sports';
 import Travel from './pages/Travel';
 import Video from './pages/Video';
 import './App.css';
+import { FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 export default function App() {
   return (
     <div>
       <header className="toolbar">
         <div className="toolbar-left">
-          <div className="toolbar-title">Alex Yang</div>
+          <div className="toolbar-title" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <NavLink to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+              Alex Yang
+            </NavLink>
+            <a
+              href="https://www.instagram.com/ayangsrealm/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram @ayangsrealm"
+              style={{ color: '#000', display: 'flex', alignItems: 'center' }}
+            >
+              <FaInstagram size={20} />
+            </a>
+            <a
+              href="mailto:aqyang.photography@gmail.com"
+              aria-label="Email aqyang.photography@gmail.com"
+              style={{ color: '#000', display: 'flex', alignItems: 'center' }}
+            >
+              <FaEnvelope size={20} />
+            </a>
+          </div>
         </div>
         <div className="toolbar-right">
           <nav className="toolbar-nav">
