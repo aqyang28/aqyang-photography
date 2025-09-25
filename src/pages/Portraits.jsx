@@ -72,25 +72,27 @@ export default function Portraits() {
 
       {/* Divider */}
       <div style={{
-        width: '137.5%', // Increased from 125% to 137.5% (1.1x)
+        width: '100%', // Reset to normal width
         height: '3.75px',
         backgroundColor: '#e0e0e0',
-        margin: '0 -18.75% 3rem -18.75%' // Adjusted negative margins to center the wider divider
+        margin: '0 auto 3rem auto' // Center the divider
       }} />
       
       {/* Images Section */}
       <section style={{
-        width: '170%', // Increased from 160% to extend closer to screen edges
-        margin: '0 -35% 0 -35%', // Increased negative margins to bring images closer to screen edge
-        padding: '0'
+        width: '100%', // Reset to normal width
+        margin: '0 auto', // Center the section
+        padding: '0' // Remove padding to match divider alignment
       }}>
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)', // 3 equal columns
-          gridTemplateRows: '829px 360px 360px', // First row increased by 1.2x (from 691px to 829px), others remain same
-          gap: '1.0125rem', // Reduced from 1.125rem to 1.0125rem (0.9x)
+          gridTemplateRows: '571px 248px 248px', // Increased by 15% (497px->571px, 216px->248px)
+          gap: '0.75rem', // Keep exact same spacing
           maxWidth: '100%',
-          padding: '0 0.50625rem 0 0.50625rem' // Reduced edge padding by half (0.5x of 1.0125rem)
+          padding: '0 2rem', // Add padding to grid container to match text section
+          justifyItems: 'center', // Center each grid item horizontally
+          alignItems: 'center' // Center each grid item vertically
         }}>
           {/* Row 1 - Portrait Orientation */}
           <FadeInImage
@@ -216,18 +218,20 @@ export default function Portraits() {
 
       {/* Second Images Section - Dynamic Layout */}
       <section style={{
-        width: '170%', // Increased from 160% to extend closer to screen edges
-        margin: '0 -35% 0 -35%', // Increased negative margins to bring images closer to screen edge
-        padding: '0',
-        marginTop: '1.5rem' // Added proper spacing to match the gap between other images
+        width: '100%', // Reset to normal width
+        margin: '0 auto', // Center the section
+        padding: '0', // Remove padding to match divider alignment
+        marginTop: '0.75rem' // Match the gap between images in the grid
       }}>
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
-          gridTemplateRows: '420px 420px', // Two tall rows for middle images
-          gap: '1.0125rem',
+          gridTemplateRows: '290px 290px', // Increased by 15% (252px->290px)
+          gap: '0.75rem', // Keep exact same spacing
           maxWidth: '100%',
-          padding: '0 0.50625rem 0 0.50625rem'
+          padding: '0 2rem', // Add padding to grid container to match text section
+          justifyItems: 'center', // Center each grid item horizontally
+          alignItems: 'center' // Center each grid item vertically
         }}>
           {/* Left Column - Single Portrait */}
           <FadeInImage
