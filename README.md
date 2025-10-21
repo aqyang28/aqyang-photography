@@ -30,4 +30,4 @@ Looking ahead, I plan to expand the technical scope of this project by deepening
 Beyond the technical goals, I hope to **grow my photography into something more meaningful than a side gig**. This website is not only a fun personal project but a platform where I can express myself and connect with others through my work. Photography—and the arts in general—is something I'm truly passionate about. I'd love to keep it going and give back to others in the process.
 
 ## 
-*Thanks for joining me on this journey, I'm excited for future progress and learning!*
+Thanks for joining me on this journey, I'm excited for future progress and learning!
