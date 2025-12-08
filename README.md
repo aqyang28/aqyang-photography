@@ -1,4 +1,4 @@
-👋🏻 Hello there, welcome to my summer web dev project where I created meaningful to me: a photography portfolio!
+👋🏻 Hello there, welcome to my summer project where I created meaningful to me: a photography portfolio!
 
 ## 1. Introduction and Motives
 This project is a personal photography showcase website that merges my passions for programming and photography. Over the summer of 2025, I was looking to improve my skillset by learning web development. With no prior experience, the beginning stages were tricky. I progressed through [The Odin Project's JavaScript pathway](https://www.theodinproject.com/paths/full-stack-javascript), and it helped me strengthen my understanding of HTML, CSS, and JavaScript fundamentals, Git, and other modern development practices. Ready to apply my learning outside of their guided projects, I began working on this photography portfolio website.
