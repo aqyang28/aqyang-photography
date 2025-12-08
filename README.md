@@ -1,7 +1,7 @@
-👋🏻 Hello there, welcome to summer project where I learned web dev by making something meaningful to me: a photography portfolio!
+👋🏻 Hello there, welcome to my summer web dev project where I created meaningful to me: a photography portfolio!
 
 ## 1. Introduction and Motives
-This project is a personal photography showcase website that merges my passions for programming and photography. Over the summer of 2025, I was looking to improve my skillset by learning web development. I stumbled upon [The Odin Project's JavaScript pathway](https://www.theodinproject.com/paths/full-stack-javascript), and it has helped me strengthen my understanding of programming fundamentals, Git, and modern development practices. Ready to apply my learning outside of their guided projects, I began working on this photography portfolio website. Following an Agile-inspired incremental development approach, I focused my initial efforts on creating a minimal but functional home page. I iteratively added new features, sections, and design improvements to make efficient progress through the project. 
+This project is a personal photography showcase website that merges my passions for programming and photography. Over the summer of 2025, I was looking to improve my skillset by learning web development. With no prior experience, the beginning stages were tricky. I progressed through [The Odin Project's JavaScript pathway](https://www.theodinproject.com/paths/full-stack-javascript), and it helped me strengthen my understanding of HTML, CSS, and JavaScript fundamentals, Git, and other modern development practices. Ready to apply my learning outside of their guided projects, I began working on this photography portfolio website.
 
 ## 2. Technology & Functionality
 **Technologies Used:**
@@ -20,14 +20,14 @@ Each gallery implements **scroll-triggered animations**, causing photos to fade 
 From a technical standpoint, the project is structured with multiple **React.js components** and `.jsx` files. It uses a responsive CSS layout to ensure compatibility across devices. The website is not currently deployed anywhere, but this GitHub repository will be actively updated as I make progress.
 
 ## 3. Challenges & Reflections
-The biggest challenge throughout this project was **maintaining discipline** in learning React and web development independently. Without the motivation of grades or deadlines, I admittedly struggled finding the intrinsic motivation to follow through. Another hurdle was debugging image sizes and layout structures within each gallery. I spent time studying professional photography portfolios for inspiration and quickly discovered that the formatting of their images isn't easily replicable. 
+It was amazing seeing how transferrable the skills I developed in other langauges, like `async await` in Swift for asynchronous programming and object-oriented programming in Java, were to learning JavaScript. My biggest obstacle was defining the grid layouts on the image pages. I played around with CSS Flexbox but found it very cumbersome to implement. I then pivoted to using a grid layout and appreciated its consistency and ease of use. CSS styling is so versatile, making it an exciting struggle to work with, especially when just beginning.
 
-Above all, though, I learned the value of **doing things you're passionate about** and **intentionally strenghtening areas you're weak in**. My love for photography and hope to display my work proudly drove me to keep developing. The combination of curiosity and persistence made this a meaningful endeavor for me.
+Above all, though, I learned the value of **doing things you're passionate about** and **intentionally strenghtening areas you're weak in**. At times, it was difficult staying consistent in learning new languages. My love for photography and goal of displaying my work proudly drove me to keep developing. That combination of curiosity and persistence made this a meaningful endeavor for me.
 
 ## 4. Moving Forward
-Looking ahead, I plan to expand the technical scope of this project by deepening my understanding of **SQL** and learning **AWS services**. While I don't predict my website needing to be scaled up for a large number of users (yet), these technologies are foundational skills that will help me moving forward—I'd love to start picking up on them now. 
+Looking ahead, I plan to expand the technical scope of this project by deepening my understanding of **SQL** and learning **AWS services**. While I don't predict my website needing to be scaled up for a large number of users (yet), I know these technologies are foundational skills that will help me moving forward.
 
-Beyond the technical goals, I hope to **grow my photography into something more meaningful than a side gig**. This website is not only a fun personal project but a platform where I can express myself and connect with others through my work. Photography—and the arts in general—is something I'm truly passionate about. I'd love to keep it going and give back to others in the process.
+Beyond the technical goals, I hope to **grow my photography into something more meaningful** than a side gig. This website is not only a fun personal project but a platform where I can express myself and connect with others through my work. Photography—and the arts in general—is something I'm truly passionate about. I'd love to keep it going and give back to others in the process.
 
 ## 
 Thanks for joining me on this journey, I'm excited for future progress and learning!
