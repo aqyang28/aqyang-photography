@@ -28,10 +28,8 @@ const images = [
 export default function Home() {
   const [errored, setErrored] = useState(Array(images.length).fill(false));
 
-  // Reset error state if image src changes
   useEffect(() => {
     setErrored(Array(images.length).fill(false));
-    // eslint-disable-next-line
   }, images.map(img => img.src));
 
   const handleError = idx => {

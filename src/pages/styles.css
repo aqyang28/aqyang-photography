@@ -1,0 +1,265 @@
+.page-container {
+  width: 100%;
+}
+
+/* Text */
+.page-text-section {
+  max-width: 722.5px;
+  margin: -10px auto 0 auto;
+  padding: 0 1rem;
+}
+
+.page-text-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.page-text-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.page-text-section p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.page-text-section a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.page-text-section a:hover {
+  color: #000;
+}
+
+/* Divider */
+.page-divider {
+  width: 100%;
+  height: 3.75px;
+  background-color: #e0e0e0;
+  margin: 0 auto 3rem auto;
+}
+
+.page-images-section {
+  width: 170%;
+  margin: 0 -35% 0 -35%;
+  padding: 0;
+  transform: scale(0.8);
+  transform-origin: center top;
+}
+
+/* Grid */
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1.0125rem;
+  column-gap: 1.0125rem;
+  width: 100%;
+  padding: 0 1.75rem;
+  box-sizing: border-box;
+}
+
+.page-grid-12-rows {
+  grid-template-rows: repeat(12, 360px);
+}
+
+.page-grid-16-rows {
+  grid-template-rows: repeat(16, 360px);
+}
+
+.page-grid-11-rows {
+  grid-template-rows: repeat(11, 360px);
+}
+
+.page-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* About Page */
+.page-text-section.about-text {
+  text-align: center;
+}
+
+/* Video Page */
+.video-container {
+  width: 100%;
+  height: fit-content;
+}
+
+.video-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 360px;
+  gap: 1.0125rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 0.50625rem;
+}
+
+.video-grid iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
+
+@media (min-width: 1400px) {
+  .page-images-section {
+    width: 170%;
+    margin: 0 -35% 0 -35%;
+  }
+}
+
+@media (max-width: 1399px) {
+  .page-images-section {
+    width: 165%;
+    margin: 0 -32.5% 0 -32.5%;
+  }
+  
+  .page-grid {
+    padding: 0 1.5rem;
+  }
+  
+  .page-grid-12-rows {
+    grid-template-rows: repeat(12, 320px);
+  }
+  
+  .page-grid-16-rows {
+    grid-template-rows: repeat(16, 320px);
+  }
+  
+  .page-grid-11-rows {
+    grid-template-rows: repeat(11, 320px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .page-images-section {
+    width: 160%;
+    margin: 0 -30% 0 -30%;
+  }
+  
+  .page-grid {
+    row-gap: 0.875rem;
+    column-gap: 0.875rem;
+    padding: 0 1.25rem;
+  }
+  
+  .page-grid-12-rows {
+    grid-template-rows: repeat(12, 280px);
+  }
+  
+  .page-grid-16-rows {
+    grid-template-rows: repeat(16, 280px);
+  }
+  
+  .page-grid-11-rows {
+    grid-template-rows: repeat(11, 280px);
+  }
+}
+
+@media (max-width: 968px) {
+  .page-images-section {
+    width: 150%;
+    margin: 0 -25% 0 -25%;
+  }
+  
+  .page-grid {
+    row-gap: 0.75rem;
+    column-gap: 0.75rem;
+    padding: 0 1rem;
+  }
+  
+  .page-grid-12-rows {
+    grid-template-rows: repeat(12, 240px);
+  }
+  
+  .page-grid-16-rows {
+    grid-template-rows: repeat(16, 240px);
+  }
+  
+  .page-grid-11-rows {
+    grid-template-rows: repeat(11, 240px);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-images-section {
+    width: 140%;
+    margin: 0 -20% 0 -20%;
+  }
+  
+  .page-grid {
+    row-gap: 0.625rem;
+    column-gap: 0.625rem;
+    padding: 0 0.75rem;
+  }
+  
+  .page-text-section {
+    padding: 0 0.75rem;
+  }
+  
+  .page-grid-12-rows {
+    grid-template-rows: repeat(12, 200px);
+  }
+  
+  .page-grid-16-rows {
+    grid-template-rows: repeat(16, 200px);
+  }
+  
+  .page-grid-11-rows {
+    grid-template-rows: repeat(11, 200px);
+  }
+}
+
+@media (max-width: 480px) {
+  .page-images-section {
+    width: 130%;
+    margin: 0 -15% 0 -15%;
+  }
+  
+  .page-grid {
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+  
+  .page-text-section {
+    padding: 0 0.5rem;
+  }
+  
+  .page-text-section h1 {
+    font-size: 2rem;
+  }
+  
+  .page-grid-12-rows {
+    grid-template-rows: repeat(12, 160px);
+  }
+  
+  .page-grid-16-rows {
+    grid-template-rows: repeat(16, 160px);
+  }
+  
+  .page-grid-11-rows {
+    grid-template-rows: repeat(11, 160px);
+  }
+}

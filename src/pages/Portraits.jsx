@@ -1,291 +1,138 @@
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
-
-// Helper component for fade-in images
-function FadeInImage({ src, alt, style, ...props }) {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15 });
-  return (
-    <img
-      ref={ref}
-      src={src}
-      alt={alt}
-      style={{
-        opacity: inView ? 1 : 0,
-        transform: inView ? 'none' : 'translateY(40px)',
-        transition: 'opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1)',
-        ...style,
-      }}
-      {...props}
-    />
-  );
-}
+import FadeInImage from '../components/FadeInImage';
+import './styles.css';
 
 export default function Portraits() {
   return (
-    <div>
+    <div className="page-container">
       {/* Text Section */}
-      <section style={{ 
-        maxWidth: 722.5,
-        margin: '-10px auto 0 auto', // Negative top margin to pull title closer to toolbar
-        padding: '0 1rem 2rem 1rem' // Set top padding to 0
-      }}>
-        <h1 style={{ 
-          fontSize: '2.5rem', 
-          fontWeight: 'bold', 
-          color: '#1a1a1a',
-          marginBottom: '3rem',
-          textAlign: 'center'
-        }}>
-          Portraits
-        </h1>
+      <section className="page-text-section">
+        <h1>Portraits</h1>
         
-        <p style={{
-          fontSize: '0.95rem',
-          lineHeight: '1.6',
-          color: '#333',
-          marginBottom: '1.5rem',
-          textAlign: 'left'
-        }}>
+        <p>
           To me, the greatest gift of shooting portraits is seeing other people smile. As a photographer, I will never take for granted the opportunity to smile alongside others.
         </p>
         
-        <p style={{
-          fontSize: '0.95rem',
-          lineHeight: '1.6',
-          color: '#333',
-          marginBottom: '2rem',
-          textAlign: 'left'
-        }}>
-          Also, I cannot thank my friend Kevin enough for taking me under his wing and teaching me techniques when I was just starting out. Check out his amazing work here (@kevins.shots)!
+        <p>
+          Also, I cannot thank my friend Kevin enough for taking me under his wing and teaching me techniques when I was just starting out. Check out his amazing work here: <a href="https://www.instagram.com/kevins.shots/" target="_blank" rel="noopener noreferrer">@kevins.shots</a>!
         </p>
 
-        <p style={{
-          fontSize: '0.95rem',
-          lineHeight: '1.6',
-          color: '#333',
-          marginBottom: '2rem',
-          textAlign: 'left'
-        }}>
+        <p>
           Below is a collection of graduation photos, family portraits, and individuals portraits that I have taken:
         </p>
       </section>
 
-      {/* Divider */}
-      <div style={{
-        width: '100%', // Reset to normal width
-        height: '3.75px',
-        backgroundColor: '#e0e0e0',
-        margin: '0 auto 3rem auto' // Center the divider
-      }} />
+      <div className="page-divider" />
       
-      {/* Images Section */}
-      <section style={{
-        width: '100%', // Reset to normal width
-        margin: '0 auto', // Center the section
-        padding: '0' // Remove padding to match divider alignment
-      }}>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)', // 3 equal columns
-          gridTemplateRows: '571px 248px 248px', // Increased by 15% (497px->571px, 216px->248px)
-          gap: '0.75rem', // Keep exact same spacing
-          maxWidth: '100%',
-          padding: '0 2rem', // Add padding to grid container to match text section
-          justifyItems: 'center', // Center each grid item horizontally
-          alignItems: 'center' // Center each grid item vertically
-        }}>
-          {/* Row 1 - Portrait Orientation */}
+      <section className="page-images-section">
+        <div className="page-grid page-grid-12-rows">
           <FadeInImage
-            src="src/images/sample_vert.jpg"
+            src="src/images/portraits/portrait_vert1.jpg"
             alt="Portrait 1"
-            style={{
-              gridColumn: '1 / 2',
-              gridRow: '1 / 2',
-              width: '100%',
-              height: '100%',
-              objectFit: 'contain',
-              display: 'block'
-            }}
+            style={{ gridColumn: '1 / 2', gridRow: '1 / 3' }}
           />
-          
           <FadeInImage
-            src="src/images/sample_vert.jpg"
+            src="src/images/portraits/portrait_horiz1.jpg"
             alt="Portrait 2"
-            style={{
-              gridColumn: '2 / 3',
-              gridRow: '1 / 2',
-              width: '100%',
-              height: '100%',
-              objectFit: 'contain',
-              display: 'block'
-            }}
+            style={{ gridColumn: '2 / 3', gridRow: '1 / 2' }}
           />
-          
           <FadeInImage
-            src="src/images/sample_vert.jpg"
+            src="src/images/portraits/portrait_vert2.jpeg"
             alt="Portrait 3"
-            style={{
-              gridColumn: '3 / 4',
-              gridRow: '1 / 2',
-              width: '100%',
-              height: '100%',
-              objectFit: 'contain',
-              display: 'block'
-            }}
+            style={{ gridColumn: '3 / 4', gridRow: '1 / 3' }}
           />
-          
-          {/* Row 2 */}
           <FadeInImage
-            src="src/images/sample_horiz.jpg"
+            src="src/images/portraits/portrait_horiz4.jpeg"
             alt="Portrait 4"
-            style={{
-              gridColumn: '1 / 2',
-              gridRow: '2 / 3',
-              width: '100%',
-              height: '100%',
-              objectFit: 'contain',
-              display: 'block'
-            }}
+            style={{ gridColumn: '1 / 2', gridRow: '3 / 4' }}
           />
-          
           <FadeInImage
-            src="src/images/sample_horiz.jpg"
+            src="src/images/portraits/portrait_vert3.jpg"
             alt="Portrait 5"
-            style={{
-              gridColumn: '2 / 3',
-              gridRow: '2 / 3',
-              width: '100%',
-              height: '100%',
-              objectFit: 'contain',
-              display: 'block'
-            }}
+            style={{ gridColumn: '2 / 3', gridRow: '2 / 4' }}
           />
-          
           <FadeInImage
-            src="src/images/sample_horiz.jpg"
+            src="src/images/portraits/portrait_horiz3.jpeg"
             alt="Portrait 6"
-            style={{
-              gridColumn: '3 / 4',
-              gridRow: '2 / 3',
-              width: '100%',
-              height: '100%',
-              objectFit: 'contain',
-              display: 'block'
-            }}
+            style={{ gridColumn: '3 / 4', gridRow: '3 / 4' }}
           />
-          
-          {/* Row 3 */}
-          <FadeInImage
-            src="src/images/sample_horiz.jpg"
-            alt="Portrait 7"
-            style={{
-              gridColumn: '1 / 2',
-              gridRow: '3 / 4',
-              width: '100%',
-              height: '100%',
-              objectFit: 'contain',
-              display: 'block'
-            }}
-          />
-          
-          <FadeInImage
-            src="src/images/sample_horiz.jpg"
-            alt="Portrait 8"
-            style={{
-              gridColumn: '2 / 3',
-              gridRow: '3 / 4',
-              width: '100%',
-              height: '100%',
-              objectFit: 'contain',
-              display: 'block'
-            }}
-          />
-          
-          <FadeInImage
-            src="src/images/sample_horiz.jpg"
-            alt="Portrait 9"
-            style={{
-              gridColumn: '3 / 4',
-              gridRow: '3 / 4',
-              width: '100%',
-              height: '100%',
-              objectFit: 'contain',
-              display: 'block'
-            }}
-          />
-        </div>
-      </section>
 
-      {/* Second Images Section - Dynamic Layout */}
-      <section style={{
-        width: '100%', // Reset to normal width
-        margin: '0 auto', // Center the section
-        padding: '0', // Remove padding to match divider alignment
-        marginTop: '0.75rem' // Match the gap between images in the grid
-      }}>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-          gridTemplateRows: '290px 290px', // Increased by 15% (252px->290px)
-          gap: '0.75rem', // Keep exact same spacing
-          maxWidth: '100%',
-          padding: '0 2rem', // Add padding to grid container to match text section
-          justifyItems: 'center', // Center each grid item horizontally
-          alignItems: 'center' // Center each grid item vertically
-        }}>
-          {/* Left Column - Single Portrait */}
           <FadeInImage
-            src="src/images/sample_vert.jpg"
+            src="src/images/portraits/portrait_vert4.jpg"
+            alt="Portrait 7"
+            style={{ gridColumn: '1 / 2', gridRow: '4 / 6' }}
+          />
+          <FadeInImage
+            src="src/images/portraits/portrait_vert6.jpg"
+            alt="Portrait 8"
+            style={{ gridColumn: '2 / 3', gridRow: '4 / 6' }}
+          />
+          <FadeInImage
+            src="src/images/portraits/portrait_vert5.jpg"
+            alt="Portrait 9"
+            style={{ gridColumn: '3 / 4', gridRow: '4 / 6' }}
+          />
+          <FadeInImage
+            src="src/images/portraits/portrait_vert7.jpeg"
+            alt="Portrait 10"
+            style={{ gridColumn: '1 / 2', gridRow: '6 / 8' }}
+          />
+          <FadeInImage
+            src="src/images/portraits/portrait_vert12.jpg"
             alt="Portrait 11"
-            style={{
-              gridColumn: '1 / 2',
-              gridRow: '1 / 3', // Spans both rows, stays vertical
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              display: 'block'
-            }}
+            style={{ gridColumn: '2 / 3', gridRow: '6 / 8' }}
           />
-          
-          {/* Middle Column - Two Landscape Images Stacked */}
           <FadeInImage
-            src="src/images/sample_horiz.jpg"
+            src="src/images/portraits/portrait_vert13.jpg"
             alt="Portrait 12"
-            style={{
-              gridColumn: '2 / 3',
-              gridRow: '1 / 2', // Top image
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              display: 'block'
-            }}
+            style={{ gridColumn: '3 / 4', gridRow: '6 / 8' }}
           />
-          
+
           <FadeInImage
-            src="src/images/sample_horiz.jpg"
+            src="src/images/portraits/portrait_horiz2.jpeg"
             alt="Portrait 13"
-            style={{
-              gridColumn: '2 / 3',
-              gridRow: '2 / 3', // Bottom image
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              display: 'block'
-            }}
+            style={{ gridColumn: '1 / 2', gridRow: '8 / 9' }}
           />
-          
-          {/* Right Column - Single Portrait */}
           <FadeInImage
-            src="src/images/sample_vert.jpg"
+            src="src/images/portraits/portrait_vert17.jpeg"
             alt="Portrait 14"
-            style={{
-              gridColumn: '3 / 4',
-              gridRow: '1 / 3', // Spans both rows, stays vertical
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              display: 'block'
-            }}
+            style={{ gridColumn: '2 / 3', gridRow: '8 / 10' }}
+          />
+          <FadeInImage
+            src="src/images/portraits/portrait_horiz5.jpg"
+            alt="Portrait 15"
+            style={{ gridColumn: '3 / 4', gridRow: '8 / 9' }}
+          />
+          <FadeInImage
+            src="src/images/portraits/portrait_vert8.jpeg"
+            alt="Portrait 16"
+            style={{ gridColumn: '1 / 2', gridRow: '9 / 11' }}
+          />
+          <FadeInImage
+            src="src/images/portraits/portrait_horiz6.jpg"
+            alt="Portrait 17"
+            style={{ gridColumn: '2 / 3', gridRow: '10 / 11' }}
+          />
+          <FadeInImage
+            src="src/images/portraits/portrait_vert16.jpg"
+            alt="Portrait 18"
+            style={{ gridColumn: '3 / 4', gridRow: '9 / 11' }}
+          />
+
+          <FadeInImage
+            src="src/images/portraits/portrait_vert10.jpg"
+            alt="Portrait 19"
+            style={{ gridColumn: '1 / 2', gridRow: '11 / 13' }}
+          />
+          <FadeInImage
+            src="src/images/portraits/portrait_vert11.jpg"
+            alt="Portrait 20"
+            style={{ gridColumn: '2 / 3', gridRow: '11 / 13' }}
+          />
+          <FadeInImage
+            src="src/images/portraits/portrait_vert14.jpg"
+            alt="Portrait 21"
+            style={{ gridColumn: '3 / 4', gridRow: '11 / 13' }}
           />
         </div>
       </section>
