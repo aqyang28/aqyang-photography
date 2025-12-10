@@ -16,15 +16,15 @@ export default function Sports() {
       
       <section className="page-images-section">
         <div className="page-grid page-grid-16-rows">
-          <FadeInImage src="src/images/sports/sp1.jpg" alt="Sports 1" />
-          <FadeInImage src="src/images/sports/sp2.jpg" alt="Sports 2" />
-          <FadeInImage src="src/images/sports/sp3.jpg" alt="Sports 3" />
-          <FadeInImage src="src/images/sports/sp4.jpg" alt="Sports 4" />
-          <FadeInImage src="src/images/sports/sp5.jpg" alt="Sports 5" />
-          <FadeInImage src="src/images/sports/sp6.jpg" alt="Sports 6" />
-          <FadeInImage src="src/images/sports/sp7.jpg" alt="Sports 7" />
-          <FadeInImage src="src/images/sports/sp8.jpg" alt="Sports 8" />
-          <FadeInImage src="src/images/sports/sp9.jpg" alt="Sports 9" />
+          <FadeInImage src="src/images/sports/sp1.jpg" alt="UNC Football quarterback Gio Lopez (7) raising his arms in celebration after his teammate scores a touchdown." />
+          <FadeInImage src="src/images/sports/sp2.jpg" alt="UNC Football linebacker Khmori House (7) lines up before the snap." />
+          <FadeInImage src="src/images/sports/sp3.jpg" alt="UNC Football sophomore defensive back Jaiden Patterson (18) celebrates with his teammates after intercepting a pass" />
+          <FadeInImage src="src/images/sports/sp4.jpg" alt="UNC Football linebacker makes a tackle on a Richmond Football player." />
+          <FadeInImage src="src/images/sports/sp5.jpg" alt="Two UNC Football players rally for a tackle on a Richmond Football player." />
+          <FadeInImage src="src/images/sports/sp6.jpg" alt="UNC Football running back De'mon June (35) runs with the ball into the sunlight." />
+          <FadeInImage src="src/images/sports/sp7.jpg" alt="UNC Football head coach Bill Belichick gestures on the sideline during a game." />
+          <FadeInImage src="src/images/sports/sp8.jpg" alt="UNC Football quarterback Gio Lopez (7) celebrates with his teammates in the end zoneafter scoring a touchdown." />
+          <FadeInImage src="src/images/sports/sp9.jpg" alt="UNC Football receiver Jordan Shipp(1) celebrates after making a first down catch." />
           <FadeInImage src="src/images/sports/sp10.jpg" alt="Sports 10" />
           <FadeInImage src="src/images/sports/sp11.jpg" alt="Sports 11" />
           <FadeInImage src="src/images/sports/sp12.jpg" alt="Sports 12" />

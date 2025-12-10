@@ -18,43 +18,43 @@ export default function Travel() {
         <div className="page-grid page-grid-11-rows">
           <FadeInImage
             src="src/images/travel/t1.jpeg"
-            alt="Travel 1"
+            alt="A boat tour guide sailing through the canals of Zhujiajiao, China."
             style={{ gridColumn: '1 / 2', gridRow: '1 / 3' }}
           />
           <FadeInImage
             src="src/images/travel/t3.jpeg"
-            alt="Travel 2"
+            alt="A Chinese temple in Zhujiajiao, China."
             style={{ gridColumn: '2 / 3', gridRow: '1 / 3' }}
           />
           <FadeInImage
             src="src/images/travel/t2.jpeg"
-            alt="Travel 3"
+            alt="A Chinese lantern hanging from the side of a building in Zhujiajiao, China."
             style={{ gridColumn: '3 / 4', gridRow: '1 / 3' }}
           />
           <FadeInImage
             src="src/images/travel/t_h1.jpg"
-            alt="Travel 4"
+            alt="Tanghulu treats through the window of a street vendor in China. The tanghulu has glazed grapes, mangos, and strawberries."
             style={{ gridColumn: '1 / 2', gridRow: '3 / 4' }}
           />
           <FadeInImage
             src="src/images/travel/t_h2.jpg"
-            alt="Travel 5"
+            alt="A long exposure photo of the cityscape from the 19th floor of an apartment complex in Beijing, China."
             style={{ gridColumn: '1 / 2', gridRow: '4 / 5' }}
           />
           <FadeInImage
             src="src/images/travel/t6.jpg"
-            alt="Travel 6"
+            alt="A morning photo of the streets from the 19th floor of an apartment complex in Beijing, China."
             style={{ gridColumn: '2 / 3', gridRow: '3 / 5' }}
           />
           <FadeInImage
             src="src/images/travel/t7.jpg"
-            alt="Travel 7"
+            alt="A swarm of large koi fish open their mouths to eat food from the surface of the water."
             style={{ gridColumn: '3 / 4', gridRow: '3 / 5' }}
           />
 
           <FadeInImage
             src="src/images/travel/t4.jpeg"
-            alt="Travel 8"
+            alt="An orange and white cat sits near the steps of a door in Zhejiang, China."
             style={{ gridColumn: '1 / 2', gridRow: '5 / 7' }}
           />
           <FadeInImage
@@ -64,12 +64,12 @@ export default function Travel() {
           />
           <FadeInImage
             src="src/images/travel/t6.jpeg"
-            alt="Travel 10"
+            alt="A small brown dog with no collar sits on the steps and looks at the camera in Zhejiang, China."
             style={{ gridColumn: '3 / 4', gridRow: '5 / 7' }}
           />
           <FadeInImage
             src="src/images/travel/t_h6.jpeg"
-            alt="Travel 11"
+            alt="The back of a man with white hair in a red shirt looking at Vincent van Gogh's Sunflowers painting in The Metropolitan Museum of Art in New York City."
             style={{ gridColumn: '2 / 3', gridRow: '6 / 7' }}
           />
           <FadeInImage
@@ -79,7 +79,7 @@ export default function Travel() {
           />
           <FadeInImage
             src="src/images/travel/t_h3.jpeg"
-            alt="Travel 13"
+            alt="The empire state building in New York City."
             style={{ gridColumn: '3 / 4', gridRow: '7 / 8' }}
           />
           <FadeInImage

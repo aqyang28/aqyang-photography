@@ -6,22 +6,22 @@ const images = [
   {
     src: 'src/images/portrait.jpg',
     title: 'Portraits',
-    alt: 'Portraits'
+    alt: 'A portrait of a recent college graduate in a white button down shirt.'
   },
   {
     src: 'src/images/sport.jpg',
     title: 'Sports',
-    alt: 'Sports'
+    alt: "A photo of a NC State women's basketball player Aziaha James shooting a free throw."
   },
   {
     src: 'src/images/travel.jpg',
     title: 'Travel',
-    alt: 'Travel'
+    alt: 'A photo of a boat tour guide sailing through the canals of Zhujiajiao, China.'
   },
   {
     src: 'src/images/video.jpg',
     title: 'Video',
-    alt: 'Photograph of a girl singing into a microphone.'
+    alt: 'A photo of a girl singing into a microphone.'
   }
 ];
 

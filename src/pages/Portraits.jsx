@@ -28,48 +28,48 @@ export default function Portraits() {
         <div className="page-grid page-grid-12-rows">
           <FadeInImage
             src="src/images/portraits/portrait_vert1.jpg"
-            alt="Portrait 1"
+            alt="A recent UNC graduate in a white skirt sitting on a bench reading a book. She is surrounded by greenery and is wearing a stole illustrating the Phillipine national flag"
             style={{ gridColumn: '1 / 2', gridRow: '1 / 3' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_horiz1.jpg"
-            alt="Portrait 2"
+            alt="A recent UNC graduate in a white skirt sitting on a bench reading a book."
             style={{ gridColumn: '2 / 3', gridRow: '1 / 2' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_vert2.jpeg"
-            alt="Portrait 3"
+            alt="Two UNC students sitting on a bench and smiling at the camera."
             style={{ gridColumn: '3 / 4', gridRow: '1 / 3' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_horiz4.jpeg"
-            alt="Portrait 4"
+            alt="A recent UNC graduate walking through the Kenan Football Stadium at night with the lights on."
             style={{ gridColumn: '1 / 2', gridRow: '3 / 4' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_vert3.jpg"
-            alt="Portrait 5"
+            alt="A recent UNC graduate wearing a white skirt and smiling at the camera. She is wearing a stole illustrating the Phillipine national flag."
             style={{ gridColumn: '2 / 3', gridRow: '2 / 4' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_horiz3.jpeg"
-            alt="Portrait 6"
+            alt="A recent UNC graduate walking through the Kenan Football Stadium at night with the lights on. He is on the phone and pointing with his right finger."
             style={{ gridColumn: '3 / 4', gridRow: '3 / 4' }}
           />
 
           <FadeInImage
             src="src/images/portraits/portrait_vert4.jpg"
-            alt="Portrait 7"
+            alt="A recent UNC graduate in front of a tree with pink flowers in bloom."
             style={{ gridColumn: '1 / 2', gridRow: '4 / 6' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_vert6.jpg"
-            alt="Portrait 8"
+            alt="A recent UNC graduate standing between the walls of the Bell Tower."
             style={{ gridColumn: '2 / 3', gridRow: '4 / 6' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_vert5.jpg"
-            alt="Portrait 9"
+            alt="A recent UNC graduate smiling between pink flowers."
             style={{ gridColumn: '3 / 4', gridRow: '4 / 6' }}
           />
           <FadeInImage

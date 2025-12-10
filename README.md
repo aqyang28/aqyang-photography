@@ -31,3 +31,48 @@ Beyond the technical goals, I hope to **grow my photography into something more 
 
 ## 
 Thanks for joining me on this journey, I'm excited for future progress and learning!
+
+## 5. Contact Form + Supabase Setup
+Use this workflow to store contact submissions in Supabase/PostgreSQL directly from the frontend.
+
+### Supabase project and table
+1) Create a free project at https://supabase.com and grab the `Project URL` and `anon` public API key (Settings → API).  
+2) Run this SQL in the Supabase SQL editor to create the table:
+```
+create table if not exists public.contact_messages (
+  id uuid primary key default gen_random_uuid(),
+  first_name text,
+  last_name text,
+  email text not null,
+  message text not null,
+  created_at timestamp with time zone default now()
+);
+
+alter table public.contact_messages enable row level security;
+```
+3) Add an insert policy for the `anon` role:
+```
+create policy "Allow anon inserts"
+on public.contact_messages
+for insert
+to anon
+with check (true);
+```
+4) (Optional) Add rate limits with Supabase Protection or PostgREST policies if you expect abuse.
+
+### App configuration
+1) Create `.env.local` in the project root and set:
+```
+VITE_SUPABASE_URL=your_project_url
+VITE_SUPABASE_ANON_KEY=your_anon_key
+```
+2) Install dependencies and run the dev server:
+```
+npm install
+npm run dev
+```
+
+### How it works
+- The form lives in `src/pages/About.jsx` and posts to the `contact_messages` table using `@supabase/supabase-js` via `src/supabaseClient.js`.
+- Basic client-side validation is included (required fields + simple email format).
+- Success and error states render inline next to the submit button.
