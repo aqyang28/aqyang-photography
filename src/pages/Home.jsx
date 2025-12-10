@@ -2,24 +2,29 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Home.css';
 
+import portraitImg from '../images/portrait.jpg';
+import sportImg from '../images/sport.jpg';
+import travelImg from '../images/travel.jpg';
+import videoImg from '../images/video.jpg';
+
 const images = [
   {
-    src: 'src/images/portrait.jpg',
+    src: portraitImg,
     title: 'Portraits',
     alt: 'A portrait of a recent college graduate in a white button down shirt.'
   },
   {
-    src: 'src/images/sport.jpg',
+    src: sportImg,
     title: 'Sports',
     alt: "A photo of a NC State women's basketball player Aziaha James shooting a free throw."
   },
   {
-    src: 'src/images/travel.jpg',
+    src: travelImg,
     title: 'Travel',
     alt: 'A photo of a boat tour guide sailing through the canals of Zhujiajiao, China.'
   },
   {
-    src: 'src/images/video.jpg',
+    src: videoImg,
     title: 'Video',
     alt: 'A photo of a girl singing into a microphone.'
   }

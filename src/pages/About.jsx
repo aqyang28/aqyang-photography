@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css';
 import supabase from '../supabaseClient';
+import headshot from '../images/headshot.jpg';
 
 const initialForm = {
   firstName: '',
@@ -76,7 +77,7 @@ export default function About() {
         <div className="about-stack">
           <div className="about-row">
           <div className="contact-image">
-            <img src="src/images/headshot.jpg" alt="A portrait of myself (Alex Yang) behind a dark blue background." />
+            <img src={headshot} alt="A portrait of myself (Alex Yang) behind a dark blue background." />
           </div>
             <div className="about-description">
               <p className="contact-heading">About Me</p>
