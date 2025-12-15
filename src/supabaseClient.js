@@ -11,3 +11,6 @@ const supabaseClient =
   supabaseUrl && supabaseAnonKey ? createClient(supabaseUrl, supabaseAnonKey) : null;
 
 export default supabaseClient;
+
+
+

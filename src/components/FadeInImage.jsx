@@ -3,11 +3,8 @@ import { useInView } from 'react-intersection-observer';
 
 function resolveSrc(source) {
   if (!source) return source;
-  // Allow absolute/http/data URLs through
   if (/^(https?:)?\/\//i.test(source) || source.startsWith('data:')) return source;
-  // Allow already-rooted paths
   if (source.startsWith('/')) return source;
-  // Resolve relative project asset (strip leading src/)
   const cleaned = source.replace(/^src\//, '');
   return new URL(`../${cleaned}`, import.meta.url).href;
 }

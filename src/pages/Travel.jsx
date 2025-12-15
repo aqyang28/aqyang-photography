@@ -59,7 +59,7 @@ export default function Travel() {
           />
           <FadeInImage
             src="src/images/travel/t_h5.jpeg"
-            alt="Travel 9"
+            alt="The back of a man with white hair in a red shirt looking at Vincent van Gogh's Sunflowers painting in The Metropolitan Museum of Art in New York City."
             style={{ gridColumn: '2 / 3', gridRow: '5 / 6' }}
           />
           <FadeInImage
@@ -69,47 +69,47 @@ export default function Travel() {
           />
           <FadeInImage
             src="src/images/travel/t_h6.jpeg"
-            alt="The back of a man with white hair in a red shirt looking at Vincent van Gogh's Sunflowers painting in The Metropolitan Museum of Art in New York City."
+            alt="The Empire State Building in New York City."
             style={{ gridColumn: '2 / 3', gridRow: '6 / 7' }}
           />
           <FadeInImage
             src="src/images/travel/t0.jpg"
-            alt="Travel 12"
+            alt="Rocks, trees, and small temple-like structures in the background of a misty garden in Beijing, China."
             style={{ gridColumn: '1 / 2', gridRow: '7 / 9' }}
           />
           <FadeInImage
             src="src/images/travel/t_h3.jpeg"
-            alt="The empire state building in New York City."
+            alt="A boat carrying tourists wearing bright red ponchos sails through the waters of Niagara Falls in Niagara Falls, New York."
             style={{ gridColumn: '3 / 4', gridRow: '7 / 8' }}
           />
           <FadeInImage
             src="src/images/travel/t7.jpeg"
-            alt="Travel 14"
+            alt="Tourists wearing blue ponchos and raincoast walk up and down stairs surrounded by trees. The Niagara Falls rush in the background."
             style={{ gridColumn: '2 / 3', gridRow: '7 / 9' }}
           />
           <FadeInImage
             src="src/images/travel/t_h9.jpeg"
-            alt="Travel 15"
+            alt="A moody photo of The Peacock Room at the Smithsonian's National Museum of Asian Art in Washington, D.C."
             style={{ gridColumn: '3 / 4', gridRow: '8 / 9' }}
           />
           <FadeInImage
             src="src/images/travel/t9.jpeg"
-            alt="Travel 16"
+            alt="A cooly lit display of the Arms and Armor gallery at The Metropolitan Museum of Art in New York City."
             style={{ gridColumn: '1 / 2', gridRow: '9 / 11' }}
           />
           <FadeInImage
             src="src/images/travel/t_h7.jpeg"
-            alt="Travel 17"
+            alt="The Fearless Girl statue stares down the American Flag in New York City."
             style={{ gridColumn: '2 / 3', gridRow: '9 / 10' }}
           />
           <FadeInImage
             src="src/images/travel/t8.jpeg"
-            alt="Travel 18"
+            alt="The Lincoln Memorial in Washington, D.C."
             style={{ gridColumn: '3 / 4', gridRow: '9 / 11' }}
           />
           <FadeInImage
             src="src/images/travel/t_h8.jpeg"
-            alt="Travel 19"
+            alt="A long exposure photo of a store with a sign reading 'I ❤️ NY' in New York City. Tourists walk past in streaks of white."
             style={{ gridColumn: '2 / 3', gridRow: '10 / 11' }}
           />
         </div>

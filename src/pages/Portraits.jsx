@@ -74,64 +74,64 @@ export default function Portraits() {
           />
           <FadeInImage
             src="src/images/portraits/portrait_vert7.jpeg"
-            alt="Portrait 10"
+            alt="A recent UNC graduate poses between the arches of the Bell Tower."
             style={{ gridColumn: '1 / 2', gridRow: '6 / 8' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_vert12.jpg"
-            alt="Portrait 11"
+            alt="A recent UNC graduate wearing her graduation gown sits on the turf of Kenan Football Stadium, looking at the camera."
             style={{ gridColumn: '2 / 3', gridRow: '6 / 8' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_vert13.jpg"
-            alt="Portrait 12"
+            alt="A recent UNC graduate wearing her graduation gown smiles at the camera at the Old Well."
             style={{ gridColumn: '3 / 4', gridRow: '6 / 8' }}
           />
 
           <FadeInImage
             src="src/images/portraits/portrait_horiz2.jpeg"
-            alt="Portrait 13"
+            alt="A recent UNC graduate wearing his graduation gown fist bumps a worker at The Deli in Chase Dining Hall."
             style={{ gridColumn: '1 / 2', gridRow: '8 / 9' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_vert17.jpeg"
-            alt="Portrait 14"
+            alt="A recent UNC graduate wearing his graduation gown poses for a portrait in fron of Hanes Hall."
             style={{ gridColumn: '2 / 3', gridRow: '8 / 10' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_horiz5.jpg"
-            alt="Portrait 15"
+            alt="Two recent UNC graduates pose for a portrait in front of the Old Well."
             style={{ gridColumn: '3 / 4', gridRow: '8 / 9' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_vert8.jpeg"
-            alt="Portrait 16"
+            alt="A recent UNC graduate wearing his graduation gown drinks from the fountain at the Old Well with his family watching."
             style={{ gridColumn: '1 / 2', gridRow: '9 / 11' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_horiz6.jpg"
-            alt="Portrait 17"
+            alt="A recent UNC graduate wearing his graduation gown orders from The Deli in Chase Dining Hall."
             style={{ gridColumn: '2 / 3', gridRow: '10 / 11' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_vert16.jpg"
-            alt="Portrait 18"
+            alt="Two recent UNC graduates look at each other and smile."
             style={{ gridColumn: '3 / 4', gridRow: '9 / 11' }}
           />
 
           <FadeInImage
             src="src/images/portraits/portrait_vert10.jpg"
-            alt="Portrait 19"
+            alt="A recent UNC graduate wearing her graduation gown reads a newspaper in the stands of Kenan Football Stadium."
             style={{ gridColumn: '1 / 2', gridRow: '11 / 13' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_vert11.jpg"
-            alt="Portrait 20"
+            alt="A recent UNC graduate wearing his graduation gown cheers in the stands of Kenan Football Stadium."
             style={{ gridColumn: '2 / 3', gridRow: '11 / 13' }}
           />
           <FadeInImage
             src="src/images/portraits/portrait_vert14.jpg"
-            alt="Portrait 21"
+            alt="A recent UNC graduate smiles while adjusting his hair."
             style={{ gridColumn: '3 / 4', gridRow: '11 / 13' }}
           />
         </div>
