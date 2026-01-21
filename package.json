@@ -1,6 +1,7 @@
 {
   "name": "photography-portfolio",
   "version": "1.0.0",
+  "homepage": "https://aqyang.github.io/aqyang-photography",
   "private": true,
   "scripts": {
     "dev": "vite",
