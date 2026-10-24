@@ -1,0 +1,24 @@
+.column-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(0.75rem, 1.25vw, 1.25rem);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.column-grid-column {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75rem, 1.25vw, 1.25rem);
+}
+
+.column-grid-image {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+}

@@ -1,17 +1,15 @@
 import React from 'react';
-import { NavLink, Routes, Route, useLocation } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Portraits from './pages/Portraits';
-import Sports from './pages/Sports';
-import Travel from './pages/Travel';
-import Video from './pages/Video';
+import { NavLink, Routes, Route } from 'react-router-dom';
+import Home from './components/views/Home/Home';
+import About from './components/views/About/About';
+import Portraits from './components/views/Portraits/Portraits';
+import Sports from './components/views/Sports/Sports';
+import Travel from './components/views/Travel/Travel';
+import Video from './components/views/Video/Video';
 import ScrollToTop from './components/ScrollToTop';
 import { FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 export default function App() {
-  const location = useLocation();
-
   return (
     <div>
       <ScrollToTop />
@@ -46,7 +44,7 @@ export default function App() {
           </nav>
         </div>
       </header>
-      <main className="main-content" key={location.pathname}>
+      <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -58,4 +56,4 @@ export default function App() {
       </main>
     </div>
   );
-} 
+}
